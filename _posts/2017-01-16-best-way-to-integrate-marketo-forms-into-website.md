@@ -8,7 +8,7 @@ categories:
 - marketo
 tags:
 - Marketo
-img: "/iframe-forms.jpg"
+img: "/forestryio/images/iframe-forms.jpg"
 alt: image
 featured_image: image.jpg
 lead-text: Iframes are bad, but it gets the job done.
