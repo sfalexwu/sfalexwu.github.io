@@ -48,7 +48,7 @@ h1.name {
   text-transform:uppercase;
 }
 .navbar-brand {
-  @extend %bazar;
+  @extend %varela;
   padding: 18px 0px 0px 20px;
   font-size:26px;
   color:$primary-color;
