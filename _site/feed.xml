@@ -5,20 +5,59 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 03 Jul 2016 09:21:16 -0700</pubDate>
-    <lastBuildDate>Sun, 03 Jul 2016 09:21:16 -0700</lastBuildDate>
+    <pubDate>Mon, 16 Jan 2017 10:41:44 -0800</pubDate>
+    <lastBuildDate>Mon, 16 Jan 2017 10:41:44 -0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
-        <title>test 5</title>
-        <description>&lt;p&gt;testset&lt;/p&gt;
+        <title>Best Way To Put Marketo Forms Onto Website</title>
+        <description>&lt;p&gt;There has been a lot of debate in the community on what is the best method to insert your Marketo forms into your website/CMS. After a lot of research on the topic, I think the best method is to &lt;em&gt;use an iframe to embed the form&lt;/em&gt;. I know a lot of developers will scoff at this idea because using iframes is a big no-no if you want clean code on your site.&lt;/p&gt;
+
+&lt;p&gt;The reason we want to use an iframe is because we want to preserve the pre-fill functionality when your visitor hits the page. Marketo cookies the visitor and if they’ve already filled out one of your forms previously, their information will pre-populate in the form fields. This feature reduces friction for the user and increases the conversion rate. This functionality does not work if you use the form embed code or the Marketo API. The user has to hit a Marketo landing page with the form on it. Inside the iframe window is a Marketo landing page with just the form on it. The rest of the page/layout is still your original design and site. Also, another big plus, is that since we are using a physical Marketo form that you can see in your Marketo instance, you can edit the form freely inside Marketo, and see all of your form fills. You won’t have a blackbox if you use the API, that also limits your calls to 1-10k per day (forgot the actual number).&lt;/p&gt;
+
+&lt;p&gt;One issue with the iframe method is that it will load the iframe twice, which would mess up your analytics and tracking. Luckily I’ve found a fix for this and will be detailing how to use it below.&lt;/p&gt;
+
+&lt;p&gt;============Solution Overview=============&lt;/p&gt;
+
+&lt;p&gt;Instead of having the iframe on the page when the page first loads, I made the iframe dynamically with javascript that assigns the src URL of the iframe at the same time its created. Then I attach the created iframe to the container of the iframe within the website.&lt;/p&gt;
+
+&lt;p&gt;===============Step 1====================&lt;/p&gt;
+
+&lt;p&gt;First you need to insert this HTML snippet into where you want the code on your website. Note to change out the URL of your actual URL of the landing page with the Marketo form.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&quot;marketoFrame&quot; data-src=&quot;https://mkto.your-landing-page-url-location.html&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;===============Step ​2​====================&lt;/p&gt;
+
+&lt;p&gt;Insert this javascript code onto your website.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;
+var iframeContainer = document.getElementById(&#39;marketoFrame&#39;);
+
+var iframeSrc = iframeContainer.getAttribute(&quot;data-src&quot;);
+var loc = window.location.toString(),
+    params = loc.split(&#39;?&#39;)[1],
+    iframe = document.createElement(&#39;iframe&#39;);
+
+iframe.setAttribute(&quot;src&quot;, iframeSrc + &#39;?&#39; + params);
+
+iframe.style.height = &quot;875px&quot;;
+iframe.style.width = &quot;100%&quot;;
+iframeContainer.appendChild(iframe);
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
-        <pubDate>Fri, 01 Jul 2016 00:12:00 -0700</pubDate>
-        <link>/blog/test-5/</link>
-        <guid isPermaLink="true">/blog/test-5/</guid>
+        <pubDate>Mon, 16 Jan 2017 18:19:18 -0800</pubDate>
+        <link>/blog/best-way-to-integrate-marketo-forms-into-website/</link>
+        <guid isPermaLink="true">/blog/best-way-to-integrate-marketo-forms-into-website/</guid>
+        
+        <category>Marketo</category>
         
         
         <category>blog</category>
+        
+        <category>marketo</category>
         
       </item>
     
