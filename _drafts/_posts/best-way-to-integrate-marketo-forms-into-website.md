@@ -6,7 +6,8 @@ layout: blog-post
 categories:
 - blog
 - marketo
-tags: []
+tags:
+- Marketo
 img: "/iframe-forms.jpg"
 alt: image
 featured_image: image.jpg
