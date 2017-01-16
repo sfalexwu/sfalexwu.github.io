@@ -5,9 +5,22 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Jun 2016 09:01:02 -0700</pubDate>
-    <lastBuildDate>Mon, 27 Jun 2016 09:01:02 -0700</lastBuildDate>
+    <pubDate>Sun, 03 Jul 2016 09:21:16 -0700</pubDate>
+    <lastBuildDate>Sun, 03 Jul 2016 09:21:16 -0700</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>test 5</title>
+        <description>&lt;p&gt;testset&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Jul 2016 00:12:00 -0700</pubDate>
+        <link>/blog/test-5/</link>
+        <guid isPermaLink="true">/blog/test-5/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Static Sites vs Wordpress</title>
@@ -23,7 +36,7 @@ The benefits of going to static sites:&lt;br /&gt;
 * Usually cheaper to host&lt;br /&gt;
 * Simpler and cleaner architecture &lt;br /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 27 Jun 2016 15:38:00 -0700</pubDate>
+        <pubDate>Mon, 27 Jun 2016 00:00:00 -0700</pubDate>
         <link>/blog/static-sites-vs-wordpress/</link>
         <guid isPermaLink="true">/blog/static-sites-vs-wordpress/</guid>
         

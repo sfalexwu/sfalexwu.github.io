@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2016-06-27T09:01:02-07:00</updated>
+ <updated>2016-07-03T09:21:16-07:00</updated>
  <id></id>
  <author>
    <name>Alex Wu</name>
@@ -13,9 +13,18 @@
 
  
  <entry>
+   <title>test 5</title>
+   <link href="/blog/test-5/"/>
+   <updated>2016-07-01T00:12:00-07:00</updated>
+   <id>/blog/test-5</id>
+   <content type="html">&lt;p&gt;testset&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Static Sites vs Wordpress</title>
    <link href="/blog/static-sites-vs-wordpress/"/>
-   <updated>2016-06-27T15:38:00-07:00</updated>
+   <updated>2016-06-27T00:00:00-07:00</updated>
    <id>/blog/static-sites-vs-wordpress</id>
    <content type="html">&lt;p&gt;Wordpress is used by 25-35% of all websites online today. They have the biggest market share amongst all other Content Management Systems. People use Wordpress because it is easy to setup, the community is strong with a lot of Wordpress developers and there is a huge plugin library to add any feature you want to your site. However, as you may know, the most popular doesn’t always equate to the best.&lt;/p&gt;
 

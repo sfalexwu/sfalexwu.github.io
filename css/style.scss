@@ -28,7 +28,7 @@ a:hover {
 }
 h1 {
   font-size:48px;
-  margin:50px 0px;
+  margin:30px 0px;
 }
 h1.name {
   @extend %bazar;
@@ -36,7 +36,7 @@ h1.name {
 }
 .skills {
   color:#777;
-  margin-bottom:100px;
+  margin-bottom:50px;
 }
 .navbar {
 }
@@ -55,8 +55,8 @@ h1.name {
 }
 
 .hero {
-  padding: 180px 0px;
-  min-height: 840px;
+  padding: 100px 0px;
+
 }
 section {
   padding:90px 0px;
@@ -342,7 +342,9 @@ textarea {
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 500px) {
-
+    h1.name {
+      font-size:38px;
+    }
     .hero {
       padding: 60px 0px;
     }
