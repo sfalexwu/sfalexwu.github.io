@@ -7,7 +7,7 @@ img: colorwheel-screenshot-912.png
 alt: colorwheel template
 project-date: April 2016
 sales: 6
-price: "$100"
+price: "$50"
 files-included: HTML, images
 type: Responsive Bootstrap 3.3.4
 mobile-preview: colorwheel-screenshot-912.png

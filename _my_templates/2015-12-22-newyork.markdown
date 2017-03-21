@@ -7,7 +7,7 @@ img: new-york-ipad.png
 alt: New york Template
 project-date: Dec 2015
 sales: 2
-price: "$75"
+price: "$40"
 files-included: HTML, images
 type: Responsive Bootstrap 3.3.4
 mobile-preview: new-york-ipad.png

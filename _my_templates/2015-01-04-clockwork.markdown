@@ -7,7 +7,7 @@ img: clock-library.png
 alt: Clockwork template
 project-date: Jan 2016
 sales: 21
-price: "$100"
+price: "$50"
 files-included: HTML, images
 type: Responsive Bootstrap 3.3.4
 mobile-preview: clockworks-mobile-screenshot.png

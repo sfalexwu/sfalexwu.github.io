@@ -5,7 +5,7 @@ permalink: "/blog/:title/"
 layout: blog-post
 categories: blog
 tags: []
-img: "/forestryio/images/jekyll-vs-wordpress.jpg"
+img: "/images/jekyll-vs-wordpress.jpg"
 alt: jekyll-vs-wordpress
 featured_image: ''
 lead-text: Jekyll is better for marketing and blog sites

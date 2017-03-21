@@ -7,7 +7,7 @@ img: event-screenshot.png
 alt: Event Landing Page
 project-date: March 2016
 sales: 12
-price: "$100"
+price: "$50"
 files-included: HTML, images
 type: Responsive Bootstrap 3.3.4
 mobile-preview: event-mobile-screenshot.png

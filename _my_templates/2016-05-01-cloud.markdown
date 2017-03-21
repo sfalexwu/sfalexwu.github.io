@@ -7,7 +7,7 @@ img: cloud-desktop-screen.png
 alt: Cloud template
 project-date: May 2016
 sales: 4
-price: "$110"
+price: "$55"
 files-included: HTML, images
 type: Responsive Bootstrap 3.3.4
 mobile-preview: cloud-mobile.png

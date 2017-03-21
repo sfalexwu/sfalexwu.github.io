@@ -7,7 +7,7 @@ img: bamba-site.png
 alt: bamba template
 project-date: Dec 2015
 sales: 9
-price: "$90"
+price: "$45"
 files-included: HTML, images
 type: Responsive Bootstrap 3.3.4
 mobile-preview: ''

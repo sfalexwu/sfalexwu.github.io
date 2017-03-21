@@ -7,7 +7,7 @@ img: ebook-screenshot-desktop-750.jpg
 alt: eBook template
 project-date: May 2016
 sales: NEW
-price: "$110"
+price: "$55"
 files-included: HTML, images
 type: Responsive Bootstrap 3.3.6
 mobile-preview: ebook-screenshot-mobile.jpg

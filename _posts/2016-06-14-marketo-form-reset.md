@@ -3,7 +3,7 @@ title: Marketo Form Reset
 date: '2016-06-14 00:00:00'
 categories: blog
 layout: blog-post
-img: "/forestryio/images/better-forms.jpg"
+img: "/images/better-forms.jpg"
 alt: Better Marketo Forms
 tags:
 - Marketo

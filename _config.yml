@@ -2,8 +2,8 @@
 title: TEMPLATESTUD.IO
 email: alex@templatestud.io
 url: https://templatestud.io
-description: "We help companies make more money with custom Marketo templates"
-skills: "Marketo Landing Page & Email Template Marketplace"
+description: "Hello, I'm Alex Wu and I'm a Marketing Web Developer"
+skills: "I build technical solutions to help marketers make more money"
 baseurl: ""
 
 
@@ -93,21 +93,6 @@ rdiscount:
 redcarpet:
   extensions: []
 
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
 
 # Footer settings
 footer:

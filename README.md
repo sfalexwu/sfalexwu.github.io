@@ -1,2 +1,2 @@
-# sfalexwu.github.io
-Templatestud.io Jekyll Site
+
+Templatestud.io 2017 Jekyll Site on Netlify

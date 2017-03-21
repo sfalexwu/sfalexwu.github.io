@@ -4,14 +4,8 @@
         '../_sass/syntax-highlighting',
         '../_sass/base';
 
-@font-face {
-  font-family: Bazar;
-  src: url(https://s3-us-west-1.amazonaws.com/templatestud.io/assets/fonts/bazar.ttf);
-}
-
 %lato { font-family: 'Lato', sans-serif; }
 %varela { font-family: 'Varela Round', sans-serif; }
-%bazar { font-family: 'Bazar', 'Varela Round', sans-serif; }
 
 body {
     @extend %varela;
@@ -36,7 +30,9 @@ h1.name {
 }
 .skills {
   color:#777;
-  margin-bottom:50px;
+  margin-bottom:25px;
+  padding:0px 20px;
+  line-height:1.2;
 }
 .navbar {
 }

@@ -7,7 +7,7 @@ img: summit-desktop-750.jpg
 alt: eBook template
 project-date: May 2016
 sales: NEW
-price: "$150"
+price: "$75"
 files-included: HTML, images
 type: Responsive Bootstrap 3.3.6
 mobile-preview: summit-mobile.jpg
