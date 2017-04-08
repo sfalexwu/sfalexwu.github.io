@@ -4,13 +4,56 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2017-03-24T17:34:45-07:00</updated>
+ <updated>2017-04-08T11:52:02-07:00</updated>
  <id></id>
  <author>
    <name>Alex Wu</name>
    <email>alex@templatestud.io</email>
  </author>
 
+ 
+ <entry>
+   <title>Marketing Vs Engineering Departments</title>
+   <link href="/blog/marketing-engineering-workflows/"/>
+   <updated>2017-04-08T00:00:00-07:00</updated>
+   <id>/blog/marketing-engineering-workflows</id>
+   <content type="html">&lt;p&gt;Whether you are a web developer in your marketing department or you’re in the engineering department building
+something for marketing. We have to stop thinking there is a one size fits all scenario for your web dev workflow.
+Marketing usually moves at a faster pace with lots of things constantly changing. It is not the ideal
+environment for a web developer that is more structured and process driven. In marketing you have to be prepared for
+when speakers to your events drop out and you need to update your site. Or when your event venue has reached capacity
+and you need to immediately shut off the registration. You can’t wait, and go through the same processes as
+engineering to get the job done. Don’t get me wrong, I believe in version control and QAing in my workflow. But, you
+have to approach it with a mindset to embrace the chaos that marketing can be.&lt;/p&gt;
+
+&lt;p&gt;Marketing projects are usually smaller in scope; like emails and landing pages. Marketing automation
+ software has tools to store your emails or landing pages separate from your main marketing website. This is good
+ because your assets are completely self contained and you won’t have to worry about it breaking
+ other areas of your site.&lt;/p&gt;
+
+&lt;p&gt;Any good marketer likes to test things like their CTA, copy and images. They need multiple versions of the same email
+ or landing page. If they are constantly testing, they don’t have time to wait for the developer to test
+ everything the same way they would do in engineering.&lt;/p&gt;
+
+&lt;p&gt;Marketing has tight deadlines and sometimes timing can make all the difference for conversions. That’s why I believe
+in progressive enhancement. Think of websites and landing pages as living documents. We are not in the age of the
+printing press where once somethings printed, we are stuck with that print until that piece of paper decomposes.
+Things change, what might be true one day can be completely different the next. What we put out now can always be enhanced
+and updated in the future.&lt;/p&gt;
+
+&lt;p&gt;The reality of web assets in marketing is that they can be dated. We can build something, only to see it disappear a
+week later. Marketing requires fresh content to be pushed out to be relevant and attract eyes. So would it
+make sense to spend a significant amount of time and resources to build something out that will be used only once for
+ the course of a week or month? That’s why I think the project manager will have to think about your ROI when they
+ start a web project. The goal of the page or email is to capture leads, the web developer’s job is to make the content
+ accessible so people can consume the information easily on mobile, desktop etc. Would it make sense to spend 8 hours
+  to fix a small rendering bug on a form input field for desktop users still on IE 8, when you know that accounts
+  for 1% of your traffic? Note that the form input will still function, but it might not look the greatest for those
+  1% of users. Or should we use that 8 hours to develop something else that can lead to even more leads instead of
+  trying to squeeze the last drop of juice out of dried lemon for those 1% of users.&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Best Way To Put Marketo Forms Onto Website</title>
@@ -31,28 +74,30 @@
 
 &lt;p&gt;First you need to insert this HTML snippet into where you want the code on your website. Note to change out the URL of your actual URL of the landing page with the Marketo form.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&quot;marketoFrame&quot; data-src=&quot;https://mkto.your-landing-page-url-location.html&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div id=&quot;marketoFrame&quot; data-src=&quot;https://mkto.your-landing-page-url-location.html&quot;&amp;gt;&amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;===============Step ​2​====================&lt;/p&gt;
 
 &lt;p&gt;Insert this javascript code onto your website.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;
-var iframeContainer = document.getElementById(&#39;marketoFrame&#39;);
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;
+var iframeContainer = document.getElementById('marketoFrame');
 
 var iframeSrc = iframeContainer.getAttribute(&quot;data-src&quot;);
 var loc = window.location.toString(),
-    params = loc.split(&#39;?&#39;)[1],
-    iframe = document.createElement(&#39;iframe&#39;);
+    params = loc.split('?')[1],
+    iframe = document.createElement('iframe');
 
-iframe.setAttribute(&quot;src&quot;, iframeSrc + &#39;?&#39; + params);
+iframe.setAttribute(&quot;src&quot;, iframeSrc + '?' + params);
 
 iframe.style.height = &quot;875px&quot;;
 iframe.style.width = &quot;100%&quot;;
 iframeContainer.appendChild(iframe);
 &amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </content>
  </entry>
  
@@ -66,12 +111,14 @@ iframeContainer.appendChild(iframe);
 &lt;p&gt;I specialize in web development for marketing, and a trend I see amongst other developers is the rise of the static site generator. Popular static site generators include Jekyll, Hugo, and Middleman. These static site generators are perfect for marketing websites and blogs. I’m currently using Jekyll for this blog. The only downside I see currently is you need to be at least somewhat technical to set up a Jekyll site and edit it. But, the good news is, I’m seeing many tools recently that is making it easier for non-technical people use static sites. Tools such as https://forestry.io/, https://www.contentful.com/ or http://prose.io/ that lets you create content like blog posts with a GUI like Wordpress. Let’s face it, once you have a marketing site up, you don’t really need to change it all that much, and if you want to do A/B testing there are tools like Optimizely that can change your site easily using their interface. I think the only things preventing a faster adoption of static sites for marketing websites and blogs  is education. As developers we need to educate our marketing peers about the greatness that is static site generators. 
 &lt;br /&gt;
 &lt;br /&gt;
-The benefits of going to static sites:&lt;br /&gt;
-* Speed and performance&lt;br /&gt;
-* Security (no databse to hack)&lt;br /&gt;
-* Minimal maintenance (no constant updates that can break your site)&lt;br /&gt;
-* Usually cheaper to host&lt;br /&gt;
-* Simpler and cleaner architecture &lt;br /&gt;&lt;/p&gt;
+The benefits of going to static sites:&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Speed and performance&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Security (no databse to hack)&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Minimal maintenance (no constant updates that can break your site)&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Usually cheaper to host&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;Simpler and cleaner architecture &lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
@@ -81,10 +128,10 @@ The benefits of going to static sites:&lt;br /&gt;
    <updated>2016-06-14T00:00:00-07:00</updated>
    <id>/blog/marketo-form-reset</id>
    <content type="html">&lt;p&gt;A complaint I hear from most clients using Marketo is that they have ugly form stylings for their embedded forms. 
-Also developers have a hard time styling the forms because Marketo doesn&#39;t use the most friendly code for the display of their forms. &lt;/p&gt;
+Also developers have a hard time styling the forms because Marketo doesn't use the most friendly code for the display of their forms. &lt;/p&gt;
 
 &lt;p&gt;I made a Marketo form reset so you have a styling baseline on your embedded forms. 
-This will help you style your form to match your own companies styleguides without having Marketo&#39;s opinionated stylings override your CSS.&lt;/p&gt;
+This will help you style your form to match your own companies styleguides without having Marketo's opinionated stylings override your CSS.&lt;/p&gt;
 
 &lt;p&gt;Just copy the code below and go to your form in Marketo. &lt;br /&gt;
 Then Edit Form &amp;gt; Form Settings &amp;gt; Click &quot;Gear&quot; icon &amp;gt; Edit Custom CSS&lt;br /&gt;
