@@ -11,7 +11,7 @@ tags:
 img: "/images/iframe-forms.jpg"
 alt: image
 featured_image: image.jpg
-lead-text: Iframes are bad, but it gets the job done.
+lead-text: Iframes are bad, but it gets the job done
 ---
 There has been a lot of debate in the community on what is the best method to insert your Marketo forms into your website/CMS. After a lot of research on the topic, I think the best method is to *use an iframe to embed the form*. I know a lot of developers will scoff at this idea because using iframes is a big no-no if you want clean code on your site. 
 

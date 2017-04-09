@@ -1,6 +1,6 @@
 ---
 title: Marketing Vs Engineering Departments
-date: '2017-04-08'
+date: '2017-04-07 18:19:18'
 permalink: "/blog/:title/"
 layout: blog-post
 categories:
