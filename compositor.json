@@ -1,0 +1,85 @@
+{
+  "name": "sfalexwu/sfalexwu.github.io",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "compositor",
+  "branch": "master",
+  "style": {
+    "name": "Material",
+    "componentSet": {
+      "nav": "nav/DarkAbsoluteNav",
+      "header": "header/GradientHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Roboto, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "letterSpacing": "-0.01em"
+    },
+    "colors": {
+      "text": "#212121",
+      "background": "#fff",
+      "primary": "#2196f3",
+      "secondary": "#1565c0",
+      "highlight": "#ff4081",
+      "border": "#e0e0e0",
+      "muted": "#f5f5f5"
+    },
+    "layout": {
+      "centered": true,
+      "bannerHeight": "80vh",
+      "maxWidth": 896
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/sfalexwu/sfalexwu.github.io",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "sfalexwu.github.io",
+      "subhead": "Templatestud.io Jekyll Site",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "sfalexwu.github.io: Templatestud.io Jekyll Site",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "sfalexwu",
+          "repo": "sfalexwu.github.io"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<p>Templatestud.io 2017 Jekyll Site on Github pages</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/sfalexwu/sfalexwu.github.io",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/sfalexwu",
+          "text": "sfalexwu"
+        }
+      ]
+    }
+  ]
+}
