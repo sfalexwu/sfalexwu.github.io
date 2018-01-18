@@ -1,0 +1,39 @@
+---
+title: Modern Marketing Tech Stack
+date: '2018-01-18 01:19:18'
+permalink: "/blog/:title/"
+layout: blog-post
+categories:
+- blog
+- webdev
+tags:
+- webdev
+img: "/images/mar-tech-stack.png"
+alt: architecture
+featured_image: image.jpg
+lead-text: If I were to start a company today, what would be the marketing tech architecture?
+---
+I’ve always been a developer in the B2B marketing department, so I get to see what works and what will help a marketing team run more efficiently. Below is an opinionated outline of what I think works best for a tech stack of a marketing team in Jan 2018.
+
+Your **marketing automation platform** is the base of everything and in this case, **I prefer Marketo**. I’ve worked with Mailchimp, Pardot, ExactTarget, and other proprietary platforms, and I think Marketo has the best tool and community compared with the competition. Their documentation/knowledge base website is fantastic. Marketo is where you will be housing all of your email sends, lifecycle and nurture campaigns, segments and overall database of potential customers behaviors/engagement across your web properties. To be effective you should do an in-depth look at your customer base and split them up into buyer personas so you can be more effective in nurturing and targeting them with just the right content at just the right time.
+
+B2B demand generation usually has a longer sales cycle where you need to guide the customer from beginning to end with the right messaging for their individual needs. A lot of times the decision to buy your product rests on more than one person in the team, so we have to arm the customer with the ammo or information so they can fight FOR us during those meetings. You will notice that the decision to buy in businesses occurs very late in group dynamics, after they’ve already done their research. We have to provide them with that research and make it readily accessible.
+
+Before you get started on the website, you have to scope out all of your requirements and you need to work closely with the design team to build out a **design system or styleguide** for all of your web assets. This styleguide will be your bible for all of your components and their HTML/CSS stylings. Once you have this setup and hosted somewhere, you will see how much more efficient your developers will be and also provide a consistent look and feel across your marketing assets. Also, another positive side-effect will be cleaner code where developers won’t have to constantly re-write and add unnecessary classes for elements, which will lead to faster page load times and faster development times. Also, having all of your styles in one place, makes it a lot easier when your company goes through a rebranding effort. Another big point is onboarding new employees will be faster and employees will be happier when they have such a organized infrastructure in their daily workplace. Non-coders will also have a place to view available modules and components to pick and choose from that are already following UI/UX best practices, so they can concentrate on creating content. Although building out a styleguide will take time and resources in the beginning, remember that spectacular success is always preceded by unspectacular preparation.
+
+
+Your **website** is probably the second most important tech in your marketing department. This is where you drive your leads and where most of your engagement will be taking place. That is why you need to be sure your website is accessible to screen-readers, all the different Browser/PC/Mac combinations, screen-sizes for mobile, ipad, and sometimes the different languages you support. Don’t forget you also need to do this for your HTML emails which follow an even stricter guideline for render consistency. For HTML emails, I recommend sticking to a more basic layout and design, preferably single column. For the actual website, I would go with a static website generator like Jekyll, Hugo, Middleman or Nuxt.js. I use to work on CMS sites like Wordpress, Drupal and Joomla, but a better more modern web development architecture <a href="https://jamstack.org/">JAMstack</a> has been a breakthrough for me. Everything has a Javascript API these days so you can hook up features to your site like a CMS GUI, user authentication, shopping cart, commenting system or simple forms. <a href="http://templatestud.io/blog/static-sites-vs-wordpress/">Here</a> are some of the benefits, of going static. One of the main complaints about using static site generators is that you need to understand code to edit them. But, the funny thing is that the code is actually simpler to understand, nothings hidden in a black box like other CMS’s. And, if the user doesn’t understand basic HTML/CSS, then maybe they shouldn’t be touching the website’s code. For all of the non-technical marketers, we hook up a decoupled/headless CMS like <a href="https://www.netlifycms.org/">NetlifyCMS</a>, <a href="https://forestry.io">Forestry.io</a> or <a href="https://www.contentful.com/">Contentful</a>, which is in the cloud so they have an easy to user interface they can access anywhere to add content to the site while decoupling the website’s code. Having it decoupled is also great for future-proofing your website, the content can easily drop into any new website without messing with any logic tied to the content. Wordpress has seen the light and now has a <a href="https://developer.wordpress.org/rest-api/">REST API</a>.
+
+Another benefit of this setup is that most of these tools, push directly to **Git version control**, so the marketers are inadvertently using version control for their content. I know how confusing Git can be for a non-technical person, I still run into Git issues myself.
+
+Since building marketing websites are my specialty, I will dive deeper into the website’s tech stack. I would first include **Bootstrap** 4, it’s out of beta and is still the most popular CSS framework out there and is easy to use. It comes with a **Sass** compiler, I love how it now uses sass mixins to handle the responsive breakpoints. We should also include **NPM and Webpack** to bundle/minify your JS and compile your Sass code and build your static site. Jekyll has plugins to help you manage your SEO and meta tags. Don’t forget to setup your OG Meta Tags so when people share your page, it will display a nice picture and title/description of your choosing. Also, include hreflang meta tags if you have an international site with content in different languages, Google will like this. Add any other libraries depending on the requirements of the site or page, like **Greensock JS Animation**, **Waypoints** scroll trigger, **Critical-CSS**, **Parallax** or Slick **Slider** carousels are some examples.
+
+Within your website, you will include all of your marketing tracking codes like **Google Analytics**, Optimizely or Intellimize for **A/B testing** and Marketo Munchkin code through **Google Tag Manager**.
+
+
+Besides the blog, your website should also have a **content library** so customers can research and browse information at their own pace. It is up to you to decide if you should Gate content behind a form or not. But, make sure the content legitimately provides value or it can have the opposite effect on the visitor if they receive a worthless sales pitch after gifting you their contact info and email address. Traditionally examples of assets are nicely designed ebook pdfs or infographics. Some content library options include **Lookbook HQ or Uberflip** or even **Marketo RTP** which uses data and machine learning to serve the best content to the user, but I have no preference for either choices.
+
+
+Well those are my suggestions, I will update this post or create a Part II to this when I discover more interesting marketing technology.
+<br/><br/>
+
