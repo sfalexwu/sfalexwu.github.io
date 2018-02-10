@@ -24,40 +24,15 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 col-md-offset-1">
             <div class="pad-btm">
-                <img src="../../img/screens/{{ page.featured-image }}" class="img-responsive img-centered pad-btm" alt="{{ page.alt }}">
+                <a href="{{ page.url }}"></a><img src="../../img/screens/work/{{ page.featured-image }}" class="img-responsive img-centered pad-btm" alt="{{ page.alt }}"></a>
 
-                <a target="_blank" href="../../img/screens/mobile/{{ page.mobile-preview }}">Mobile preview</a>
                 <p class="description">{{ page.description }}</p>
+                <p>Created: {{ page.project-date }}</p>
             </div>
         </div>
 
-        <div class="col-md-4">
-            <ul class="list-group">
-                <li class="list-group-item">Price:
-                    <strong>{{ page.price }}
-                    </strong>
-                </li>
-
-                <li class="list-group-item">Created:
-                    <strong>{{ page.project-date }}
-                    </strong>
-                </li>
-                <li class="list-group-item">
-                    <a id="bsPopover" data-toggle="popover" data-trigger="hover" data-trigger="focus" data-content="Assistance with questions, bugs & issues. Does not include customizations or installations.">
-                        Free Support <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="list-group-item">Files Included:
-                        {{ page.files-included }}
-                </li>
-                <li class="list-group-item">Type:
-                    {{ page.type }}
-                </li>
-            </ul>
-            <a target="_blank" href="{{ page.buy }}" type="button" aria-pressed="true" class="btn btn-2"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
-        </div>
     </div>
 </div>
 
